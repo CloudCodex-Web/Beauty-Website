@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-content">
+    <!-- Header/Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">Skin<span>Vibe</span></a>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-items"><a href="index.html">Home</a></li>
+          <li class="nav-items"><a href="shop.html">Shop</a></li>
+          <li class="nav-items"><a href="about.html">About</a></li>
+          <li class="nav-items"><a href="testimonials.html">Testimonials</a></li>
+          <li class="nav-items"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="skeleton">
+      <div class="skeleton-navbar"></div>
+      <div class="skeleton-hero"> 
+        <div class="skeleton-text"></div>
+        <div class="skeleton-text small"></div>
+        <div class="skeleton-btn"></div>
+        <div class="skeleton-image"></div>
+      </div>
+    </div>
+    <section class="shop-section" id="shop">
+      <h2>Our Products</h2>
+      <!-- Filter Buttons  -->
+      <div class="filters">
+        <button onClick="filterProducts('all')">All</button>
+        <button onClick="filterProducts('skincare')">Skincare</button>
+        <button onClick="filterProducts('makeup')">Makeup</button>
+        <button onClick="filterProducts('haircare')">Haircare</button>
+      </div>
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart: <span id="cart-count">0</span>
+      </div>
+      <div class="shop-container">
+        <div class="product-card skincare">
+          <img src="images/p1.jpg" alt="Vitamin C Serum">
+          <h3>Vitamin C Serum</h3>
+          <p class="price">Rs. 299</p>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card makeup">
+          <img src="images/p2.jpg" alt="Matte Lipstick">
+          <h3>Matte Lipstick</h3>
+          <p class="price">Rs. 499</p>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card haircare">
+          <img src="images/p3.jpg" alt="Hair Oil">
+          <h3>Hair Oil</h3>
+          <p class="price">Rs. 799</p>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card skincare">
+          <img src="images/p4.jpg" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p class="price">Rs. 299</p>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+ <script src="js/script.js"></script>
+</html>
